@@ -2,7 +2,7 @@ export KBUILD_BUILD_USER=hidden
 export KBUILD_BUILD_HOST=hidden
 make O=$HOME/out ARCH=arm64 lineageos_axon7_defconfig
 
-PATH="/home/mohammadbaddar1990/clang/bin:/home/mohammadbaddar1990/gcc-64/bin:/home/mohammadbaddar1990/gcc-32/bin:${PATH}" \
+PATH="/home/mohammadbaddar1990/dragon/bin:/home/mohammadbaddar1990/gcc-64/bin:/home/mohammadbaddar1990/gcc-32/bin:${PATH}" \
 make -j$(nproc --all) O=$HOME/out \
                       ARCH=arm64 \
                       CC=clang \
