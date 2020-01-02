@@ -32,7 +32,9 @@ struct kgsl_sync_pt {
 
 struct kgsl_sync_fence_waiter {
 	struct sync_fence_waiter waiter;
+#ifdef CONFIG_SYNC_DEBUG
 	struct sync_fence *fence;
+#endif
 	char name[32];
 	void (*func)(void *priv);
 	void *priv;
